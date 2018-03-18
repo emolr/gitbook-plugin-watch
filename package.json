@@ -1,0 +1,28 @@
+{
+    "name": "gitbook-plugin-watch",
+    "version": "0.0.1",
+    "description": "Specify more glob paths to watch to trigger a rebuild of docs.",
+    "author": {
+        "name": "Emil Rune Møller",
+        "url": "https://github.com/emolr"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/emolr/gitbook-plugin-watch"
+    },
+    "engines": {
+        "gitbook": ">1.x.x"
+    },
+    "gitbook": {
+        "properties": {
+            "files": {
+                "type": "array",
+                "default": "[]",
+                "description": "Array of file/glob paths to watch"
+            }
+        }
+    },
+    "dependencies": {
+        "chokidar": "^2.0.2"
+    }
+}
